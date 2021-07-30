@@ -96,7 +96,7 @@
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .hero-wrapper {
     background: linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
@@ -159,7 +159,7 @@ margin-bottom: 25px;
     outline: none;
 
 }
-.input-two {
+.form-button {
     width: 123px;
     font-family: Pavanam;
     font-style: normal;
@@ -169,11 +169,15 @@ margin-bottom: 25px;
     color: rgba(255, 255, 255, 0.4);
     padding: 9px 35px;
     background: linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
-   
+   margin-left: 20px;
     border: 2px solid #FF1640;
     border-radius: 50px;
     box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
     outline: none;
+}
+.form-button:hover {
+    transform: scale(1.1);
+    color: #FF1640;
 }
 
 .hero-footer {
@@ -201,10 +205,14 @@ margin-bottom: 25px;
     margin-top: 117px;
     margin-bottom: 61px;
 }
+.sec-img-item {
+    height: 237px;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.25);
+}
 .sec-img-item:hover {
     transform: scale(1.1);
     transition: 0.4s;
-    z-index: 1;
+    
     
 }
 .sec-img-item:nth-child(2) {
@@ -212,7 +220,7 @@ margin-bottom: 25px;
     margin-left: -20px;
     position: relative;
     bottom: 70px;
-
+    z-index: 1;
 }
 .marketing {
     display: flex;
@@ -519,4 +527,12 @@ margin-top: 11px;
     transform: scale(1.05);
     text-shadow: 4px 4px 15px rgb(14, 13, 13);
     
+}
+.thanks {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
 }
